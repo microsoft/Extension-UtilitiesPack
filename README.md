@@ -1,4 +1,5 @@
-![](https://github.com/openalm/Extension-UtilitiesPack/blob/master/Utilites/images/Icon128.png)
+![](https://github.com/microsoft/Extension-UtilitiesPack/blob/master/Utilites/images/Icon128.png)
+
 # Task Utilities
 [Release Management utility tasks](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.utilitytasks)
 
