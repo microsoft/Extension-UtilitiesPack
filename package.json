@@ -1,0 +1,22 @@
+{
+    "name": "extension-utilitiespack",
+    "version": "0.1.10",
+    "description": "",
+    "private": "true",
+    "scripts": {
+        "clean": "rimraf dist",
+        "test": "npm run clean && webpack",
+        "build": "npm run clean && webpack --mode production",
+        "package": "tfx extension create --manifest-globs vss-extension.json --rev-version"
+    },
+    "devDependencies": {
+        "copy-webpack-plugin": "^11.0.0",
+        "rimraf": "^5.0.5",
+        "tfx-cli": "^0.16.0",
+        "webpack": "^5.88.2",
+        "webpack-cli": "^5.1.4"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
