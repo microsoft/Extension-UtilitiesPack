@@ -1,16 +1,16 @@
 variables:
 - name: major
-  value: '2'
+  value: '0'
 - name: minor
   value: '1'
 - name: extensionName
-  value: 'wiql-editor'
+  value: 'utilitytasks'
 - name: marketplaceServiceConnection
   value: 'marketplaceServiceConnection'
 - name: publisherId
   value: 'ms-devlabs'
 - name: publicExtensionName
-  value: "Wiql Editor"
+  value: "Release Management Utility tasks"
 
 name: $(major).$(minor)$(rev:.r)
 
@@ -40,17 +40,11 @@ stages:
       inputs:
         versionSpec: '13.x'
 
-    - script: npm install -g typings tfx-cli
-
-    - template: build.yml@pipeline-templates
-      parameters:
-        workingDirectory: '$(Build.SourcesDirectory)/extension'
-
     - template: package.yml@pipeline-templates
       parameters:
         extensionName: $(extensionName)
         outputPath: 'out'
-        rootPath: '$(Build.SourcesDirectory)/extension'
+        rootPath: '$(Build.SourcesDirectory)/Utilites'
 
 - stage: 'DeployDev'
   displayName: 'Deploy to dev'

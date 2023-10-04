@@ -7,14 +7,12 @@
         "clean": "rimraf dist",
         "test": "npm run clean && webpack",
         "build": "npm run clean && webpack --mode production",
-        "package": "tfx extension create --manifest-globs vss-extension.json --rev-version"
+        "package:dev": "tfx extension create --overrides-file ../configs/dev.json --manifest-globs azure-devops-extension.json --no-prompt --output ../out" ,
+        "package:release": "tfx extension create --overrides-file configs/release.json --manifest-globs azure-devops-extension.json --no-prompt"
     },
     "devDependencies": {
-        "copy-webpack-plugin": "^11.0.0",
         "rimraf": "^5.0.5",
-        "tfx-cli": "^0.16.0",
-        "webpack": "^5.88.2",
-        "webpack-cli": "^5.1.4"
+        "tfx-cli": "^0.16.0"
     },
     "keywords": [],
     "author": "",
