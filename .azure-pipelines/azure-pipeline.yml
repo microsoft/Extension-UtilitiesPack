@@ -40,8 +40,8 @@ stages:
       inputs:
         versionSpec: '13.x'
      # task to print out current path
-    - displayName: 'Print current path'
-      script: |
+    
+    - script: |
         pwd
         echo $(Build.SourcesDirectory)/Utilites
         tree $(Build.SourcesDirectory)/Utilites
