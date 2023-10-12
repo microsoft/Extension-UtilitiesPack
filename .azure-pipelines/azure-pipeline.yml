@@ -43,8 +43,8 @@ stages:
     - template: package.yml@pipeline-templates
       parameters:
         extensionName: $(extensionName)
-        outputPath: 'out'
-        rootPath: '$(Build.SourcesDirectory)'
+        outputPath: '../out'
+        rootPath: '$(Build.SourcesDirectory)/Utilites'
 
 - stage: 'DeployDev'
   displayName: 'Deploy to dev'
