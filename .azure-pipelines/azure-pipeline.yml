@@ -56,45 +56,45 @@ stages:
         outputPath: '../out'
         rootPath: '$(Build.SourcesDirectory)/Utilites'
 
-# - stage: 'DeployDev'
-#   displayName: 'Deploy to dev'
-#   dependsOn: Build
-#   condition: succeeded()
-#   jobs: 
-#   - template: deploy.yml@pipeline-templates
-#     parameters:
-#       environment: 'dev'
-#       extensionName: $(extensionName)
-#       marketplaceConnectedServiceName: $(marketplaceServiceConnection)
-#       publisherId: $(publisherId)
-#       publicExtensionName: $(publicExtensionName)
-#       updateTaskVersion: true
+- stage: 'DeployDev'
+  displayName: 'Deploy to dev'
+  dependsOn: Build
+  condition: succeeded()
+  jobs: 
+  - template: deploy.yml@pipeline-templates
+    parameters:
+      environment: 'dev'
+      extensionName: $(extensionName)
+      marketplaceConnectedServiceName: $(marketplaceServiceConnection)
+      publisherId: $(publisherId)
+      publicExtensionName: $(publicExtensionName)
+      updateTaskVersion: true
 
-# - stage: 'DeployTest'
-#   displayName: 'Deploy to Test'
-#   dependsOn: DeployDev
-#   condition: succeeded()
-#   jobs:
-#   - template: deploy.yml@pipeline-templates
-#     parameters:
-#       environment: 'test'
-#       extensionName: $(extensionName)
-#       marketplaceConnectedServiceName: $(marketplaceServiceConnection)
-#       publisherId: $(publisherId)
-#       publicExtensionName: $(publicExtensionName)
-#       updateTaskVersion: true
+- stage: 'DeployTest'
+  displayName: 'Deploy to Test'
+  dependsOn: DeployDev
+  condition: succeeded()
+  jobs:
+  - template: deploy.yml@pipeline-templates
+    parameters:
+      environment: 'test'
+      extensionName: $(extensionName)
+      marketplaceConnectedServiceName: $(marketplaceServiceConnection)
+      publisherId: $(publisherId)
+      publicExtensionName: $(publicExtensionName)
+      updateTaskVersion: true
 
-# - stage: 'DeployRelease'
-#   displayName: 'Deploy Release'
-#   dependsOn: DeployTest
-#   condition: succeeded()
-#   jobs:
-#   - template: deploy.yml@pipeline-templates
-#     parameters:
-#       environment: 'public'
-#       extensionName: $(extensionName)
-#       marketplaceConnectedServiceName: $(marketplaceServiceConnection)
-#       publisherId: $(publisherId)
-#       publicExtensionName: $(publicExtensionName)
-#       extensionVisibility: 'public'
-#       updateTaskVersion: true
+- stage: 'DeployRelease'
+  displayName: 'Deploy Release'
+  dependsOn: DeployTest
+  condition: succeeded()
+  jobs:
+  - template: deploy.yml@pipeline-templates
+    parameters:
+      environment: 'public'
+      extensionName: $(extensionName)
+      marketplaceConnectedServiceName: $(marketplaceServiceConnection)
+      publisherId: $(publisherId)
+      publicExtensionName: $(publicExtensionName)
+      extensionVisibility: 'public'
+      updateTaskVersion: true
