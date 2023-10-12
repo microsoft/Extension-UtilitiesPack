@@ -59,10 +59,10 @@
         "path": "Shell++"
       },
       {
-        "path": "zip"
+        "path": "Zip"
       },
       {
-        "path": "unzip"
+        "path": "UnZip"
       },
       {
         "path": "Rollback"
@@ -119,7 +119,7 @@
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": {
-                "name": "zip"
+                "name": "Zip"
             }
         },
       {
@@ -129,7 +129,7 @@
           "ms.vss-distributed-task.tasks"
         ],
         "properties": {
-          "name": "unzip"
+          "name": "UnZip"
         }
       },
       {
