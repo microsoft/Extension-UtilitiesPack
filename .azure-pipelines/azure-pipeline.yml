@@ -39,11 +39,21 @@ stages:
     - task: NodeTool@0
       inputs:
         versionSpec: '13.x'
+     # task to print out current path
+    
+    - script: |
+        pwd
+        echo $(Build.SourcesDirectory)/Utilites
+        tree $(Build.SourcesDirectory)/Utilites
+
+    
+      
+
 
     - template: package.yml@pipeline-templates
       parameters:
         extensionName: $(extensionName)
-        outputPath: 'out'
+        outputPath: '../out'
         rootPath: '$(Build.SourcesDirectory)/Utilites'
 
 - stage: 'DeployDev'
