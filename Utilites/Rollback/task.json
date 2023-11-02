@@ -3,7 +3,7 @@
   "name": "Rollback",
   "friendlyName": "Rollback PowerShell",
     "description": "Run a powershell script to rollback deployments. Task execution context is available in the powershell context for implementing conditional rollback",
-  "helpMarkDown": "[More Information](https://github.com/openalm/Extension-UtilitiesPack)",
+  "helpMarkDown": "[More Information](https://github.com/microsoft/Extension-UtilitiesPack)",
   "category": "Deploy",
   "visibility": [
     "Release"
