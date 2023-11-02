@@ -30,13 +30,13 @@
     ],
     "links": {
         "getstarted": {
-            "uri": "https://github.com/openalm/Extension-UtilitiesPack/blob/master/Utilites/overview.md"
+            "uri": "https://github.com/microsoft/Extension-UtilitiesPack/blob/master/Utilites/overview.md"
         },
         "issues": {
-            "uri": "https://github.com/openalm/Extension-UtilitiesPack/issues"
+            "uri": "https://github.com/microsoft/Extension-UtilitiesPack/issues"
         },
         "repository": {
-            "uri": "https://github.com/openalm/Extension-UtilitiesPack"
+            "uri": "https://github.com/microsoft/Extension-UtilitiesPack"
         }
 	},
     "branding": {
