@@ -18,7 +18,7 @@
     "Minor": "3",
     "Patch": "1"
   },
-  "minimumAgentVersion": "2.144.0",
+  "minimumAgentVersion": "2.206.0",
   "instanceNameFormat": "Shell Script",
   "groups": [
     {
