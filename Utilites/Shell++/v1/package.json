@@ -1,0 +1,15 @@
+{
+  "name": "shellpp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "task.js",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^4.17.2",
+    "path": "^0.12.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
