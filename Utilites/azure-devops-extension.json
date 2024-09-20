@@ -11,15 +11,15 @@
         "large": "images/Icon512.png"
     },
     "screenshots": [
-    	{
-      		"path": "images/screen1.png"
-    	},
-    	{
-      		"path": "images/screen1.png"
-    	},
-    	{
-      		"path": "images/screen1.png"
-    	}
+        {
+            "path": "images/screen1.png"
+        },
+        {
+            "path": "images/screen1.png"
+        },
+        {
+            "path": "images/screen1.png"
+        }
     ],
     "categories": [
         "Azure pipelines"
@@ -38,39 +38,39 @@
         "repository": {
             "uri": "https://github.com/microsoft/Extension-UtilitiesPack"
         }
-	},
+    },
     "branding": {
         "color": "#f6f7fb",
         "theme": "light"
-    },	
+    },
     "content": {
         "details": {
             "path": "overview.md"
         }
     },
     "files": [
-      {
-        "path": "Tokenizer"
-      },
-      {
-        "path": "Powershell++"
-      },
-      {
-        "path": "Shell++"
-      },
-      {
-        "path": "Zip"
-      },
-      {
-        "path": "UnZip"
-      },
-      {
-        "path": "Rollback"
-      },
-      {
-        "path": "images",
-        "addressable": true
-      }
+        {
+            "path": "Tokenizer"
+        },
+        {
+            "path": "Powershell++"
+        },
+        {
+            "path": "Shell++"
+        },
+        {
+            "path": "Zip"
+        },
+        {
+            "path": "UnZip"
+        },
+        {
+            "path": "Rollback"
+        },
+        {
+            "path": "images",
+            "addressable": true
+        }
     ],
     "scopes": [
         "vso.build_execute",
@@ -122,17 +122,17 @@
                 "name": "Zip"
             }
         },
-      {
-        "id": "task-unzip",
-        "type": "ms.vss-distributed-task.task",
-        "targets": [
-          "ms.vss-distributed-task.tasks"
-        ],
-        "properties": {
-          "name": "UnZip"
-        }
-      },
-      {
+        {
+            "id": "task-unzip",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "UnZip"
+            }
+        },
+        {
             "id": "task-rollback",
             "type": "ms.vss-distributed-task.task",
             "targets": [
