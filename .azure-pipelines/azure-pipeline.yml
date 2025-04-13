@@ -40,8 +40,12 @@ stages:
       inputs:
         versionSpec: '13.x'
      # task to print out current path
-    
-  
+    - task: Bash@3
+      inputs:
+        targetType: 'inline'
+        script: |
+          cp ../LICENSE ./
+      
     - template: package.yml@pipeline-templates
       parameters:
         extensionName: $(extensionName)
