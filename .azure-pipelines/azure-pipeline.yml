@@ -38,7 +38,7 @@ stages:
     steps:
     - task: NodeTool@0
       inputs:
-        versionSpec: '13.x'
+        versionSpec: '18.x'
      # task to print out current path
     - task: Bash@3
       inputs:
